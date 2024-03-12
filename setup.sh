@@ -12,6 +12,9 @@ fi
 # Copiar todos los archivos del directorio actual a la carpeta de instalación
 cp -r ./* "$install_dir/"
 
+# Renombra el sample.env a .env.
+mv "$install_dir/sample.env" "$install_dir/.env"
+
 # Obtener la ruta del script principal
 script_path="$install_dir/mount_server_drives.sh"
 
