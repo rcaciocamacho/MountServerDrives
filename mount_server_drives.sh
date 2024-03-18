@@ -38,7 +38,7 @@ for ((i = 0; i < ${#remote_names[@]}; i++)); do
     sshfs "${remote_names[i]}:${remote_paths[i]}" "${local_mount_points[i]}" &
     
     # Esperar un breve periodo para asegurar que el montaje se complete
-    sleep 5
+    sleep 2
 done
 
 # Verificar si los montajes fueron exitosos
